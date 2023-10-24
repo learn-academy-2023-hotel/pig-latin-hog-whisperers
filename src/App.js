@@ -33,17 +33,37 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
-      arrayOfUserInput.map((value)=> {
-        if (value.charAt(0) === "a" || "e" || "i" || "o" || "u") {
-          return value + "way"
-        }
-        else {
-          return value
-        }
-      })
-      
+
+      if (eachWord.charAt(0) === "a" ||
+      eachWord.charAt(0) === "e" ||
+      eachWord.charAt(0) === "i" ||
+      eachWord.charAt(0) === "o" ||
+      eachWord.charAt(0) === "u") {
+        return eachWord + "way"
+      } else if (eachWord.charAt(0) === "q") {
+        return eachWord.slice(2) + "quway"
+      } else if (eachWord.includes("squ")) {
+        return eachWord.slice(3) + "squway"
+      } else if (eachWord.charAt(eachWord.length - 1) === "y" &&
+      !eachWord.includes("a") &&
+      !eachWord.includes("e") &&
+      !eachWord.includes("i") &&
+      !eachWord.includes("o") &&
+      !eachWord.includes("u")) {
+        return eachWord.slice(eachWord.length - 1) + eachWord.slice(0, -1) + "ay"
+      } else if (eachWord.charAt(0) !== "a" &&
+      eachWord.charAt(0) !== "e" &&
+      eachWord.charAt(0) !== "i" &&
+      eachWord.charAt(0) !== "o" &&
+      eachWord.charAt(0) !== "u") {
+        return eachWord
+      }
+      else {
+        return "oink"
+      }
+
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
-      return eachWord
+      // return eachWord
     })
 
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
