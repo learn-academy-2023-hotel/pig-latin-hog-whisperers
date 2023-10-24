@@ -33,6 +33,8 @@ const App = () => {
       console.log("vowelsArray:", vowelsArray)
 
       // ACTION ITEM: your Pig Latin logic goes here!
+     
+      
 
       if (eachWord.charAt(0) === "a" ||
       eachWord.charAt(0) === "e" ||
@@ -56,7 +58,7 @@ const App = () => {
       eachWord.charAt(0) !== "i" &&
       eachWord.charAt(0) !== "o" &&
       eachWord.charAt(0) !== "u") {
-        return eachWord
+        return eachWord.slice(eachWord.indexOf(vowelsArray))
       }
       else {
         return "oink"
