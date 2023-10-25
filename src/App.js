@@ -45,7 +45,7 @@ const App = () => {
       } else if (eachWord.indexOf(vowelsArray) !== 0) {
         return eachWord.slice(eachWord.indexOf(vowelsArray[0])) + eachWord.slice(0, eachWord.indexOf(vowelsArray[0])) + "ay"
       } else {
-        return "oink"
+        return "oink oink"
       }
       // if (eachWord.charAt(0) === "a" ||
       // eachWord.charAt(0) === "e" ||
