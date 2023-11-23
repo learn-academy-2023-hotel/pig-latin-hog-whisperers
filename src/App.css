@@ -20,23 +20,30 @@ button {
   border-radius: 0.9rem;
   margin: 1rem;
   padding: 1rem;
+  background-color: white;
+  color: black;
 }
 
 .body-container {
   padding-bottom: 3rem;
+  
 }
 
 .page-container {
   min-height: 100vh;
   position: relative;
+  background-image: url('/src/assets/2066147.jpg');
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .input-section {
-  background-color: grey;
+  background-color: rgb(251, 178, 190);
   border-radius: 0.5rem;
-  color: #fff;
-  margin: 1rem;
-  padding: 1rem;
+  color: black;
+  border-color: black;
+  /* margin: 1rem;
+  padding: 1rem; */
 }
 
 .user-input {
@@ -44,6 +51,7 @@ button {
   font-size: 1rem;
   height: 3rem;
   width: 30rem;
+  border-color: black;
 }
 
 /* ---FOOTER--- */
